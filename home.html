@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- ------ Título ------- -->
+        <title>BetFlix - Os melhores filmes você encontra aqui</title>
+        <meta charset="utf-8" />
+
+
+        <!-- ------ Arquivo CSS ------- -->
+        <link rel="stylesheet" type="text/css" href="estilo.css"> 
+
+        <!-- ------------ Script de funções ----------------- -->
+        <script src = "functions.js"></script>
+
+    </head>
+    
+    <body align="center">
+
+        <!------------       Header       ------------>
+        <div id="header">
+            <text id = "title_Header">
+                <strong>BetFlix</strong>
+            </text>
+            <br><br>
+            <text id = "sub_title_Header">
+                <strong>Os melhores filmes você encontra aqui !</strong>
+            </text>
+        </div>
+
+        <!------------       Inicio da pag principal       ------------>
+
+        <div id="central_Body"> <!-- Campo onde ficam os filmes, menus, campo de pesquisa e resultados -->
+           
+
+            <!-- ----------------- Menu de botões de generos -------------- -->
+            <div id = "menu">
+                <text class = "buttons" onclick = "getFilmesAcao()">Ação</text>
+                <text class = "buttons" onclick = "getFilmesAventura()">Aventura</text>
+                <text class = "buttons" onclick = "getFilmesRomance()">Romance</text>
+                <text class = "buttons" onclick = "getFilmesTerror()">Terror</text>
+                <text class = "buttons" onclick = "getFilmesFic()">Ficção Científica</text>
+
+                <!-- ----------- Campo de pesquisa de filmes  ---------->
+                <input type = "text" placeholder = "Pesquise por filmes" id = "nomeFilme"/>
+                <input type = "submit" value = "Procurar" onclick = "getFilmes ()" id = "search">
+            </div>
+
+            <!-- ---------------- Parte de exibição dos filmes ------------ -->
+            
+            <div id = "results">
+
+                <!-- ----------- Introdução ----------->
+                
+                <h1 class = "results_title">
+                    Bem vindo!
+                </h1>
+                <h2 class = "results_title">
+                    Este é o BetFlix! A plataforma fictícia criada para testar meus conhecimentos e
+                    capacidade de aprendizado. Explore os botões do menu de gênero ou pesquise
+                    por nomes de filmes para encontrar a melhor obra para assitir enquanto 
+                    aproveita próxima refeição :3 
+                </h2>
+            </div>
+
+        </div>
+            
+        
+
+    </body>
+ 
+</html>
